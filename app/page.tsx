@@ -1,11 +1,13 @@
 import { BookingDemo } from "@/components/demo";
 import { EarlyAccessForm } from "@/components/early-access";
+import { LineContact } from "@/components/line-contact";
 import { Arrow, Calendar, Chat, Check, LinkIcon, Sparkle } from "@/components/icons";
 import Link from "next/link";
 
 const types = ["🎵 ดนตรี", "⚽ กีฬา", "🎨 ศิลปะ", "🗣️ ภาษา", "📚 กวดวิชา"];
 export default function Home() {
   return <main className="overflow-hidden">
+    <LineContact />
     <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-5 lg:px-8"><a href="#top" className="flex items-center gap-2 font-black text-[#183f33]"><span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#287b5c] text-white"><Calendar className="h-5 w-5" /></span>ClassMakeup</a><a href="#early-access" className="rounded-full bg-[#183f33] px-4 py-2.5 text-xs font-bold text-white sm:px-5 sm:text-sm">เข้าร่วม Early Access</a></nav>
 
     <section id="top" className="relative mx-auto grid max-w-6xl gap-12 px-5 pb-20 pt-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:px-8 lg:pb-28 lg:pt-20">
